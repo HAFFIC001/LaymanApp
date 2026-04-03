@@ -1,1 +1,11 @@
 
+Prefer SwiftUI over UIKit
+Use async/await networking
+Follow MVVM architecture
+Avoid hardcoding layout values
+Keep components reusable
+Use Supabase for persistence
+Use Gemini API for summaries and chatbot
+Keep UI responsive and minimal
+Handle API errors gracefully
+Reset state on navigation transitions
