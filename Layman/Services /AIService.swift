@@ -6,7 +6,7 @@ class AIService {
     // INSERT YOUR GEMINI API KEY HERE
     //////////////////////////////////////////////////////////
 
-    private let apiKey = "AIzaSyCvoMRF0dPAkijEfym9rDneSTfFIaYZVd8"
+    private let apiKey = "YOUR API KEY HERE"
 
 
     //////////////////////////////////////////////////////////
