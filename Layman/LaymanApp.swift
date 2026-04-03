@@ -1,17 +1,29 @@
-//
-//  LaymanApp.swift
-//  Layman
-//
-//  Created by Aryan Gupta on 01/04/26.
-//
-
 import SwiftUI
 
 @main
 struct LaymanApp: App {
+
+    @StateObject var authVM = AuthViewModel()
+    @StateObject var bookmarkVM = BookmarkViewModel()
+
     var body: some Scene {
+
         WindowGroup {
-            ContentView()
+
+            if authVM.isLoggedIn {
+
+                MainTabView()
+                    .environmentObject(authVM)
+                    .environmentObject(bookmarkVM)
+                    .preferredColorScheme(.light)
+
+            } else {
+
+                WelcomeView()
+                    .environmentObject(authVM)
+                    .environmentObject(bookmarkVM)
+                    .preferredColorScheme(.light)
+            }
         }
     }
 }
